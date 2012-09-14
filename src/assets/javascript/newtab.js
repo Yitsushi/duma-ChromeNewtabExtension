@@ -17,11 +17,6 @@ var reloadContent = function(e) {
       history.pushState('', '', '/'+res.human_id+'.html');
     }, 'json');
   });
-  
-  jQuery('#panel').fadeOut('slow', function() {
-    var random = Duma.getRandomOne();
-    jQuery(this).html(random);
-  }).fadeIn('slow');
 };
 
 jQuery(function() {
